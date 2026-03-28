@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curses-syntax-highlighting"
+version = "0.1.0"
+description = "Syntax highlighting for Python curses applications using Pygments"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Grim"}
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pygments>=2.0.0",
+    "wcwidth>=0.2.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Terminals",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+keywords = ["curses", "syntax", "highlighting", "terminal", "tui", "pygments"]
+
+[project.urls]
+Homepage = "https://github.com/GITHUB_USERNAME/python_curses_syntax_highlighting"
+Repository = "https://github.com/GITHUB_USERNAME/python_curses_syntax_highlighting"
+Issues = "https://github.com/GITHUB_USERNAME/python_curses_syntax_highlighting/issues"
+
+[tool.setuptools.packages.find]
+include = ["curses_syntax_highlighting*"]
