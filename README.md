@@ -2,6 +2,8 @@
 
 A Python library for displaying syntax-highlighted code in terminal applications using Python's curses library and Pygments for lexical analysis.
 
+![Syntax highlighting example](assets/python_syntax_highlighting_example.png)
+
 ## Features
 
 - **Syntax Highlighting**: Uses Pygments to support hundreds of programming languages
@@ -25,6 +27,8 @@ pip install curses-syntax-highlighting
 | **String** | `preview_string(stdscr, text, language=)` | A string variable | You supply the language name |
 
 Use `preview_text` when rendering files. Use `preview_string` when the code comes from a variable - fetched from an API, generated at runtime, stored in a database, etc.
+
+> **Building an application?** This library is designed to be embedded in your own curses TUI — not used as a standalone viewer. See `examples/6. Split Preview Example.py` for a minimal pattern showing how to integrate syntax highlighting into an existing curses main loop without giving up control of key input.
 
 ## Quick Start
 
