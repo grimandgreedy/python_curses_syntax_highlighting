@@ -1,4 +1,4 @@
-# Python Curses Syntax Highlighting
+# Python Curses Code Previewer
 
 A Python library for displaying syntax-highlighted code in terminal applications using Python's curses library and Pygments for lexical analysis.
 
